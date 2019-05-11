@@ -87,8 +87,8 @@ ul {
 
 #logo {
 	margin: 20px 20px 30px 14px;
-	
 }
+
 #logo a {
 	text-decoration: none;
 	color: black;
@@ -165,7 +165,4 @@ ul {
 .asset > * {
 	height: inherit;
 	width: inherit;
-}
-
-img {
 }
