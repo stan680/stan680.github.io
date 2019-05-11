@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Violet Blyth</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<dir class="vhcontainer">
+	<dir class="nav">
+		<div class="nav-top">
+			<div id="logo">
+				<h1><a href="/">Violet Blyth</a></h1>
+			</div>
+			<ul class="menu">
+				<li class="selected"><a>First the air is blue,</a></li>
+				<li><a>Keyholes</a></li>
+				<li><a>The Grass Used to Be Here</a></li>
+				<li><a>Efflorescence</a></li>
+				<li><a>Almost Touchable/The Garden Keeper</a></li>
+				<li><a>The sea strikes against her shoulders,</a></li>
+				<li><a>Fractured Views</a></li>
+				<li><a>About</a></li>
+				<li><span id="copyright">Copyright © All rights reserved.</span></li>
+			</ul>
+		</div>
+		<ul class="social">
+			<li>
+				<a href="https://www.instagram.com/violetblyth/" target="_blank">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="-70 -150 1000 1000" class="social-icon">
+						<path fill="currentColor" d="M571 500q0-59-41-101t-101-42-101 42-42 101 42 101 101 42 101-42 41-101zm77 0q0 91-64 156t-155 64-156-64-64-156 64-156 156-64 155 64 64 156zm61-229q0 21-15 36t-37 15-36-15-15-36 15-36 36-15 37 15 15 36zM429 148H327l-54 2-57 5-40 11q-28 11-49 32t-33 49q-6 16-10 40t-6 58-1 53 0 59 0 43 0 43 0 59 1 53 6 58l10 40q12 28 33 49t49 32q16 6 40 11t57 5 54 2 59 0 43 0 42 0 59 0 54-2 58-5 39-11q28-11 50-32t32-49q6-16 10-40t6-58 1-53 0-59 0-43 0-43 0-59-1-53-6-58l-10-40q-11-28-32-49t-50-32q-16-6-39-11t-58-5-54-2-59 0-42 0zm428 352q0 128-3 177-5 116-69 180t-179 69q-50 3-177 3t-177-3q-116-6-180-69T3 677q-3-49-3-177t3-177q5-116 69-180t180-69q49-3 177-3t177 3q116 6 179 69t69 180q3 49 3 177z"></path>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</dir>
+
+	<div class="asset-container">
+		<div id="asset1" class="asset">
+			<img src="https://format-com-cld-res.cloudinary.com/image/private/s--XQC3_ds8--/c_limit,g_center,h_900,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/d90bd3ef0336913c0a97591602aa2801/side1.jpg">
+		</div>
+		<div id="asset2" class="asset">
+			<img src="https://format-com-cld-res.cloudinary.com/image/private/s--DedtxiBP--/c_limit,g_center,h_900,w_65535/a_auto,fl_keep_iptc.progressive,q_95/v1/6cf58916536bb1d18ba570a8811f100c/shells_porthole_JPG.jpg">
+		</div>
+		<div id="end"></div>
+	</div>
+</dir>
+</body>
+
+<script>
+// Force horizontal scrolling
+document.addEventListener('wheel', function(e)
+{
+	if (Math.abs(event.deltaY) > Math.abs(event.deltaX)) {
+        document.documentElement.scrollLeft += event.deltaY;
+      	event.preventDefault();
+    }
+});
+</script>
+</html>

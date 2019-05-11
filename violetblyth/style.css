@@ -1,0 +1,171 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+	overflow-y: hidden;
+	overscroll-behavior: none;
+}
+
+h1 {
+	font-size: 22px;
+	line-height: 1.1em;
+}
+
+ul {
+	list-style: none;
+}
+
+.vhcontainer {
+	position: absolute;
+}
+
+@media only screen and (max-height: 550px) {
+	.vhcontainer {
+		top: 0px;
+		margin-top: 0px;
+		height: 100vh;
+	}
+}
+
+@media only screen and (min-height: 550px) {
+	.vhcontainer {
+		top: 50%;
+		margin-top: -275px;
+		height: 550px;
+	}
+}
+
+.nav {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	left: 50px;
+	width: 223px;
+	height: inherit;
+	background: white;
+	opacity: 0.95;
+	z-index: 9999;
+}
+
+.nav-top {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.social {
+	margin-bottom: 10px;
+	margin-left: 14px;
+	margin-top: 2px;
+}
+
+.social li {
+	background: #000;
+	border-radius: 50px;
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	margin: 0 2px;
+	padding: 1px;
+	position: relative;
+	width: 22px;
+	height: 22px;
+	zoom: 1;
+}
+
+.social li svg {
+	position: relative;
+	top: 1px;
+	width: auto;
+	height: 14px;
+	overflow: visible;
+	color: white;
+}
+
+#logo {
+	margin: 20px 20px 30px 14px;
+	
+}
+#logo a {
+	text-decoration: none;
+	color: black;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.menu {
+	margin-left: 14px;
+	width: 180px;
+	height: 100%;
+	flex: 1;
+	overflow-y: scroll;
+	line-height: 1.5;
+	/*font-size: 100%;*/
+}
+
+.menu li {
+	display: block;
+	font-size: 12px;
+	margin-bottom: 3px;
+}
+
+.menu li a {
+	font-size: 100%
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	padding: 3px 6px 3px 1px;
+}
+
+.menu .selected a {
+	color: #EE0006;
+}
+
+#copyright {
+	display: block;
+	font-size: 11px;
+	padding: 16px 0 0 0;
+	color: #888888;
+}
+
+.asset-container {
+	display: flex;
+	margin-left: 300px;
+}
+
+#end {
+	width: 20px;
+}
+
+.asset {
+	margin: 0px 1.5px;
+}
+
+@media only screen and (max-height: 550px) {
+	.asset {
+		height: 100vh !important;
+		width: auto !important;
+	}
+}
+
+#asset1	{
+	width: 977.766px;
+	height: 550px;
+}
+
+#asset2 {
+	width: 366.66px;
+	height: 550px;
+}
+
+.asset > * {
+	height: inherit;
+	width: inherit;
+}
+
+img {
+}
