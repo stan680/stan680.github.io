@@ -119,10 +119,7 @@ ul {
 .asset-container {
 	display: flex;
 	margin-left: 300px;
-}
-
-#end {
-	width: 20px;
+	margin-right: 5px;
 }
 
 .asset {
