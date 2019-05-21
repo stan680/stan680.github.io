@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Violet Blyth | Admin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+<h1>The form.</h1>
+
+<input type="text" id="text1">
+<button id="submit1">Submit</button>
+
+<script>
+(function (){
+	const text1 = document.getElementById("text1");
+	const Http = new XMLHttpRequest();
+
+	document.getElementById("submit1").onclick=()=>{		
+		fetch('https://github.com/login/oauth/authorize', {
+			method: 'GET',
+		}).then(function(response){
+			if (response.status !== 200) {
+				console.log('Looks like there was a problem. Status Code: ' + response.status);
+				return;
+			}
+
+			response.json().then(function(data){
+				console.log(data);
+			});
+		});
+	}
+})();
+</script>
+</body>
+</html>
